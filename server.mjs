@@ -190,19 +190,19 @@ app.put("/product/:id", async (req, res) => {
   }
 });
 
-// const __dirname = path.resolve();
-// app.use(
-//   "/",
-//   express.static(path.join(__dirname, "./five_princple_rest_api/build"))
-// );
-// app.use(
-//   "*",
-//   express.static(path.join(__dirname, "./five_princple_rest_api/build"))
-// );
+const __dirname = path.resolve();
+app.use(
+  "/",
+  express.static(path.join(__dirname, "./web/build"))
+);
+app.use(
+  "*",
+  express.static(path.join(__dirname, "./web/build"))
+);
 
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
 
 mongoose.connect(mongodbURI);
 
