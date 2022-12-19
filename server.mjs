@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 const mongodbURI =
   process.env.mongodbURI ||
-  "mongodb+srv://abc:abc@cluster0.qgyid76.mongodb.net/productdatabase?retryWrites=true&w=majority";
+  "mongodb+srv://abc:abc@cluster0.qgyid76.mongodb.net/pwaproduct?retryWrites=true&w=majority";
 app.use(cors());
 app.use(express.json());
 
