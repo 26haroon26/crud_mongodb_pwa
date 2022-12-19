@@ -193,11 +193,11 @@ app.put("/product/:id", async (req, res) => {
 const __dirname = path.resolve();
 app.use(
   "/",
-  express.static(path.join(__dirname, "./five_princple_rest_api/build"))
+  express.static(path.join(__dirname, "./pwa_web/build"))
 );
 app.use(
   "*",
-  express.static(path.join(__dirname, "./five_princple_rest_api/build"))
+  express.static(path.join(__dirname, "./pwa_web/build"))
 );
 
 app.listen(port, () => {
