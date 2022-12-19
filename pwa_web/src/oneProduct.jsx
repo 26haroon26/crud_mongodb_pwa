@@ -6,7 +6,7 @@ let baseUrl = "";
 if (window.location.href.split(":")[0] === "http") {
   baseUrl = "http://localhost:4000";
 } else {
-  baseUrl = "https://mongodb-crud.up.railway.app/";
+  baseUrl = "https://crudmongodbpwa-production.up.railway.app";
 }
 
 function OneProduct() {
